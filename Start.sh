@@ -18,6 +18,12 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     curl \
 
 echo '
+        •• Cloning Repository
+'
+git clone https://github.com/CipherX-XD/CipherXSelfBot.git
+
+
+echo '
 	•• Getting Libraries and Installing
 ' 
 pip install --upgrade pip wheel 
