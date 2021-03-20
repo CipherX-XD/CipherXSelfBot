@@ -10,4 +10,6 @@
 
 # Support:
 
-[<img align="left" src="https://cdn.jsdelivr.net/npm/simple-icons@3.5.0/icons/telegram.svg" width="40px" />](https://t.me/FutureTechnologyGuardX)
+
+<a href="https://t.me/FutureTechnologyGuardX"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/joinchat/riq-psSksFtiMDU8"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
