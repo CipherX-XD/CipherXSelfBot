@@ -46,3 +46,7 @@ echo "
 		   •• Wait till python images are pushed
 	   •• Give build logs to Support Group if installation fails
 "
+echo '
+	•• Running the Self Bot
+'
+python3 -m cipherx
