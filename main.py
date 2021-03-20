@@ -521,7 +521,7 @@ async def weebify(event):
 		if nnormiecharacter in nnormiefont:
 			ccirclecharacter = ccirclefont[nnormiefont.index(nnormiecharacter)]
 			string = string.replace(nnormiecharacter, ccirclecharacter)
-	await event.edit(string
+	await event.edit(string)
 
 @cipherx.on(events.NewMessage(pattern="3font ?(.*)"))
 async def weebify(event):
