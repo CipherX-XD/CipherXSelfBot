@@ -19,6 +19,26 @@ api_hash = input('Enter your account api_hash <Get from my.telegram.org>: ')
 cipherx = TelegramClient("CɪᴘʜᴇʀX", api_id , api_hash )
 cipherx.start() 
 
+
+        
+@cipherx.on(events.NewMessage(pattern=r"help"))
+async def norouz(event):
+    if event.fwd_from:
+        return
+        await event.edit("راهنمای استفاده از سلف")
+        await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:")
+        await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>")
+        await event.edit(""راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>\n✨(c) @FutureTechnologyGuardX Exclusive✨")
+
 @cipherx.on(events.NewMessage(pattern="^.type (.*)"))
 async def typewriter(event):
     if event.fwd_from:
@@ -478,7 +498,7 @@ acirclefont = [
 ###fonts###
 
 
-@cipherx.on(events.NewMessage(pattern="1text ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="1font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
         return
@@ -497,7 +517,7 @@ async def weebify(event):
     await event.edit(string)
 
 
-@cipherx.on(events.NewMessage(pattern="2text ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="2font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
         return
@@ -516,7 +536,7 @@ async def weebify(event):
     await event.edit(string
 
 
-@cipherx.on(events.NewMessage(pattern="3text ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="3font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
         return
@@ -535,7 +555,7 @@ async def weebify(event):
     await event.edit(string)
 
 
-@cipherx.on(events.NewMessage(pattern="4text ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="4font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
         return
@@ -553,7 +573,7 @@ async def weebify(event):
             string = string.replace(onormiecharacter, ocirclecharacter)
     await event.edit(string)
 
-@cipherx.on(events.NewMessage(pattern="5text ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="5font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
         return
