@@ -23,21 +23,19 @@ cipherx.start()
 		
 @cipherx.on(events.NewMessage(pattern="^.help"))
 async def norouz(event):
-	if event.fwd_from:
-		return
-		await event.edit("راهنمای استفاده از سلف")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>")
-		await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>\n✨(c) @FutureTechnologyGuardX Exclusive✨")
+	await event.edit("راهنمای استفاده از سلف")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>")
+	await event.edit("راهنمای استفاده از سلف\n✨لیست کامند ها:\n1 ~ .type <text>\n2 ~ .norouz\n3 ~ .sp < count<100 > <text>\n4 ~ .bigsp < count>100 > <text>\n5 ~ .msp <count> <reply to gif/sticker/video/picture>\n6 ~ .1font <text>\n7 ~ .2font <text>\n8 ~ .3font <text>\n9 ~ .4font <text>\n10 ~ .5font <text>\n✨(c) @FutureTechnologyGuardX Exclusive✨")
 
 @cipherx.on(events.NewMessage(pattern="^.type (.*)"))
 async def typewriter(event):
@@ -93,17 +91,17 @@ async def norouz(event):
 		await event.edit("Ⲏⲁⲣ")
 		await event.edit("Ⲏⲁⲣⲣ")
 		await event.edit("Ⲏⲁⲣⲣⲩ")
-		await event.edit("Ⲏⲁⲣⲣⲩ ")
+		await event.edit("Ⲏⲁⲣⲣⲩ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ")
-		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ")
+		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ")
-		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ ")
+		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉⳳ")
 		await event.edit("Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉⳳⲉ")
@@ -125,8 +123,6 @@ async def norouz(event):
 
 @cipherx.on(events.NewMessage(pattern="^.sp (.*)"))
 async def minorspam(e):
-	if e.fwd_from:
-		return
 	sender = await e.get_sender() ; me = await e.client.get_me()
 	try:
 		await e.delete()
@@ -143,14 +139,9 @@ async def minorspam(e):
 
 @cipherx.on(events.NewMessage(pattern="^.bigsp (.*)"))
 async def bigspam(e):
-	if e.fwd_from:
-		return
-	try:
-		await e.delete()
-	except:
-		pass
 	if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
 		message = e.text
+		await e.delete() 
 		counter = int(message[9:13])
 		spam_message = str(e.text[13:])
 		for i in range(1, counter):
@@ -162,8 +153,6 @@ async def bigspam(e):
 
 @cipherx.on(events.NewMessage(pattern="^.msp (.*)"))
 async def picspam(e):
-	if e.fwd_from:
-		return
 	sender = await e.get_sender()
 	me = await e.client.get_me()
 	try:
