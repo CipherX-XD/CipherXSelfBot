@@ -523,7 +523,6 @@ async def weebify(event):
             string = string.replace(nnormiecharacter, ccirclecharacter)
     await event.edit(string
 
-
 @cipherx.on(events.NewMessage(pattern="3font ?(.*)"))
 async def weebify(event):
     if event.fwd_from:
