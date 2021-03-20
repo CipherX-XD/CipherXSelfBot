@@ -21,7 +21,7 @@ cipherx.start()
 
 
 		
-@cipherx.on(events.NewMessage(pattern=r"help"))
+@cipherx.on(events.NewMessage(pattern="^.help"))
 async def norouz(event):
 	if event.fwd_from:
 		return
@@ -70,7 +70,7 @@ async def typewriter(event):
 			logger.warn(str(e))
 		await asyncio.sleep(delay)
 		
-@cipherx.on(events.NewMessage(pattern=r"norouz"))
+@cipherx.on(events.NewMessage(pattern="^.norouz"))
 async def norouz(event):
 	if event.fwd_from:
 		return
@@ -125,7 +125,7 @@ async def norouz(event):
 
 @cipherx.on(events.NewMessage(pattern="^.sp (.*)"))
 async def minorspam(e):
-	if event.fwd_from:
+	if e.fwd_from:
 		return
 	sender = await e.get_sender() ; me = await e.client.get_me()
 	try:
@@ -143,7 +143,7 @@ async def minorspam(e):
 
 @cipherx.on(events.NewMessage(pattern="^.bigsp (.*)"))
 async def bigspam(e):
-	if event.fwd_from:
+	if e.fwd_from:
 		return
 	try:
 		await e.delete()
@@ -162,7 +162,7 @@ async def bigspam(e):
 
 @cipherx.on(events.NewMessage(pattern="^.msp (.*)"))
 async def picspam(e):
-	if event.fwd_from:
+	if e.fwd_from:
 		return
 	sender = await e.get_sender()
 	me = await e.client.get_me()
@@ -486,7 +486,7 @@ acirclefont = [
 ###fonts###
 
 
-@cipherx.on(events.NewMessage(pattern="1font ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="^.1font ?(.*)"))
 async def weebify(event):
 	if event.fwd_from:
 		return
@@ -505,7 +505,7 @@ async def weebify(event):
 	await event.edit(string)
 
 
-@cipherx.on(events.NewMessage(pattern="2font ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="^.2font ?(.*)"))
 async def weebify(event):
 	if event.fwd_from:
 		return
@@ -523,7 +523,7 @@ async def weebify(event):
 			string = string.replace(nnormiecharacter, ccirclecharacter)
 	await event.edit(string)
 
-@cipherx.on(events.NewMessage(pattern="3font ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="^.3font ?(.*)"))
 async def weebify(event):
 	if event.fwd_from:
 		return
@@ -542,7 +542,7 @@ async def weebify(event):
 	await event.edit(string)
 
 
-@cipherx.on(events.NewMessage(pattern="4font ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="^.4font ?(.*)"))
 async def weebify(event):
 	if event.fwd_from:
 		return
@@ -560,7 +560,7 @@ async def weebify(event):
 			string = string.replace(onormiecharacter, ocirclecharacter)
 	await event.edit(string)
 
-@cipherx.on(events.NewMessage(pattern="5font ?(.*)"))
+@cipherx.on(events.NewMessage(pattern="^.5font ?(.*)"))
 async def weebify(event):
 	if event.fwd_from:
 		return
