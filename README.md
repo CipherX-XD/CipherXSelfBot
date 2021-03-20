@@ -4,7 +4,7 @@
 
 ## Telethon based
 
-## Special Python Self Bot for Norouz
+## Special for Norouz
 
 ## Happy Norouz 💐
 
