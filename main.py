@@ -5,7 +5,8 @@
 import asyncio
 from telethon import TelegramClient, events, utils, functions, types, connection
 
-print("""   _______       __             _  __
+print("""   
+   _______       __             _  __
   / ____(_)___  / /_  ___  ____| |/ /
  / /   / / __ \/ __ \/ _ \/ ___/   /
 / /___/ / /_/ / / / /  __/ /  /   |
@@ -114,6 +115,57 @@ async def norouz(event):
         await event.edit("💘💘Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉⳳⲉʀⲩⲃⲟⲇⲩ💘💘")
         await event.edit("💕💕Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉⳳⲉʀⲩⲃⲟⲇⲩ💕💕")
 
+@cipherx.on(events.NewMessage(pattern="^.sp (.*)"))
+async def spammer(e):
+    if event.fwd_from:
+        return
+    sender = await e.get_sender() ; me = await e.client.get_me()
+    try:
+        await e.delete()
+    except:
+        pass
+    try:
+        counter = int(e.pattern_match.group(1).split(' ', 1)[0])
+        spam_message = str(e.pattern_match.group(1).split(' ', 1)[1])
+        await asyncio.wait([e.respond(spam_message) for i in range(counter)])
+        
+@cipherx.on(events.NewMessage(pattern="^.bigsp (.*)"))
+async def bigspam(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        message = e.text
+        counter = int(message[9:13])
+        spam_message = str(e.text[13:])
+        await e.delete()
+        for i in range(1, counter):
+            await e.respond(spam_message)
+
+@cipherx.on(events.NewMessage(pattern="^.msp (.*)"))
+async def picspam(e):
+    if event.fwd_from:
+        return
+    sender = await e.get_sender()
+    me = await e.client.get_me()
+    try:
+        await e.delete()
+    except:
+        pass
+    try:
+        counter = int(e.pattern_match.group(1).split(" ", 1)[0])
+        reply_message = await e.get_reply_message()
+        if (
+            not reply_message
+            or not e.reply_to_msg_id
+            or not reply_message.media
+            or not reply_message.media
+        ):
+            return await e.edit("```روی یک عکس، گیف، استیکر و یا ویدئو ریپلای کنید و کامند را بزنید.```")
+        message = reply_message.media
+        for i in range(1, counter):
+            await e.client.send_file(e.chat_id, message)
+    except:
+        return await e.reply(
+            f"**ارور**\nنحوه استفاده: `.msp <تعداد> ریپلای رو گیف/استیکر/عکس/ویدئو`"
+        )
 
 
 get_event_loop().run_forever()        
