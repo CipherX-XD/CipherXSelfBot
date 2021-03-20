@@ -18,7 +18,6 @@ ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 apt update && apt upgrade -y && apt install --no-install-recommends -y \
     python \
-    bash \
     curl \
     git \
 
@@ -49,4 +48,4 @@ echo "
 echo '
 	•• Running the Self Bot
 '
-python3 -m cipherx
+python3 -m main.py
