@@ -155,7 +155,7 @@ async def bigspam(e):
         spam_message = str(e.text[13:])
         for i in range(1, counter):
             await e.respond(spam_message)
-    except:
+    else:
         return await e.reply(
             f"**ارور**\nنحوه استفاده: `.bigsp <تعداد بالاتر از 100> متن`"
         )
