@@ -13,9 +13,6 @@ echo '
         •• Getting Packages and Installing
 '
 
-export TZ=Asia/Tehran 
-ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 apt update && apt upgrade -y && apt install --no-install-recommends -y \
     python \
     curl \
