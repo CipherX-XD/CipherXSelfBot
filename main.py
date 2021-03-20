@@ -116,7 +116,7 @@ async def norouz(event):
         await event.edit("💕💕Ⲏⲁⲣⲣⲩ Ⲛⲟʀⲟυⲍ ⲧⲟ Ⲉⳳⲉʀⲩⲃⲟⲇⲩ💕💕")
 
 @cipherx.on(events.NewMessage(pattern="^.sp (.*)"))
-async def spammer(e):
+async def minorspam(e):
     if event.fwd_from:
         return
     sender = await e.get_sender() ; me = await e.client.get_me()
@@ -128,16 +128,29 @@ async def spammer(e):
         counter = int(e.pattern_match.group(1).split(' ', 1)[0])
         spam_message = str(e.pattern_match.group(1).split(' ', 1)[1])
         await asyncio.wait([e.respond(spam_message) for i in range(counter)])
-        
+    except:
+        return await e.reply(
+            f"**ارور**\nنحوه استفاده: `.sp <تعداد کمتر از 100> متن`"
+        )
+
 @cipherx.on(events.NewMessage(pattern="^.bigsp (.*)"))
 async def bigspam(e):
+    if event.fwd_from:
+        return
+    try:
+        await e.delete()
+    except:
+        pass
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         message = e.text
         counter = int(message[9:13])
         spam_message = str(e.text[13:])
-        await e.delete()
         for i in range(1, counter):
             await e.respond(spam_message)
+    except:
+        return await e.reply(
+            f"**ارور**\nنحوه استفاده: `.bigsp <تعداد بالاتر از 100> متن`"
+        )
 
 @cipherx.on(events.NewMessage(pattern="^.msp (.*)"))
 async def picspam(e):
@@ -167,6 +180,396 @@ async def picspam(e):
             f"**ارور**\nنحوه استفاده: `.msp <تعداد> ریپلای رو گیف/استیکر/عکس/ویدئو`"
         )
 
+####fonts###
+
+ormiefont = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+irclefont = [
+    "a⃠",
+    "b⃠",
+    "c⃠",
+    "d⃠",
+    "e⃠",
+    "f⃠",
+    "g⃠",
+    "h⃠",
+    "i⃠",
+    "j⃠",
+    "k⃠",
+    "l⃠",
+    "m⃠",
+    "n⃠",
+    "o⃠",
+    "p⃠",
+    "q⃠",
+    "r⃠",
+    "s⃠",
+    "t⃠",
+    "u⃠",
+    "v⃠",
+    "w⃠",
+    "x⃠",
+    "y⃠",
+    "z⃠",
+]
+
+
+
+nnormiefont = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+ccirclefont = [
+    "𝖆",
+    "𝖇",
+    "𝖈",
+    "𝖉",
+    "𝖊",
+    "𝖋",
+    "𝖌",
+    "𝖍",
+    "𝖎",
+    "𝖏",
+    "𝖐",
+    "𝖑",
+    "𝖒",
+    "𝖓",
+    "𝖔",
+    "𝖕",
+    "𝖖",
+    "𝖗",
+    "𝖘",
+    "𝖙",
+    "𝖚",
+    "𝖛",
+    "𝖜",
+    "𝖝",
+    "𝖞",
+    "𝖟",
+]
+
+
+
+
+normiefont = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+circlefont = [
+    "𝓪",
+    "𝓫",
+    "𝓬",
+    "𝓭",
+    "𝓮",
+    "𝓯",
+    "𝓰",
+    "𝓱",
+    "𝓲",
+    "𝓳",
+    "𝓴",
+    "𝓵",
+    "𝓶",
+    "𝓷",
+    "𝓸",
+    "𝓹",
+    "𝓺",
+    "𝓻",
+    "𝓼",
+    "𝓽",
+    "𝓾",
+    "𝓿",
+    "𝔀",
+    "𝔁",
+    "𝔂",
+    "𝔃",
+]
+
+
+
+onormiefont = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+ocirclefont = [
+    "🅰",
+    "🅱",
+    "🅲",
+    "🅳",
+    "🅴",
+    "🅵",
+    "🅶",
+    "🅷",
+    "🅸",
+    "🅹",
+    "🅺",
+    "🅻",
+    "🅼",
+    "🅽",
+    "🅾",
+    "🅿",
+    "🆀",
+    "🆁",
+    "🆂",
+    "🆃",
+    "🆄",
+    "🆅",
+    "🆆",
+    "🆇",
+    "🆈",
+    "🆉",
+]
+
+
+
+anormiefont = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+acirclefont = [
+    "🄰",
+    "🄱",
+    "🄲",
+    "🄳",
+    "🄴",
+    "🄵",
+    "🄶",
+    "🄷",
+    "🄸",
+    "🄹",
+    "🄺",
+    "🄻",
+    "🄼",
+    "🄽",
+    "🄾",
+    "🄿",
+    "🅀",
+    "🅁",
+    "🅂",
+    "🅃",
+    "🅄",
+    "🅅",
+    "🅆",
+    "🅇",
+    "🅈",
+    "🅉",
+]
+###fonts###
+
+
+@cipherx.on(events.NewMessage(pattern="1text ?(.*)"))
+async def weebify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await event.edit("`یه متن بده بهم`")
+        return
+    string = "  ".join(args).lower()
+    for ormiecharacter in string:
+        if ormiecharacter in ormiefont:
+            irclecharacter = irclefont[ormiefont.index(ormiecharacter)]
+            string = string.replace(ormiecharacter, irclecharacter)
+    await event.edit(string)
+
+
+@cipherx.on(events.NewMessage(pattern="2text ?(.*)"))
+async def weebify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await event.edit("`یه متن بده بهم`")
+        return
+    string = "  ".join(args).lower()
+    for nnormiecharacter in string:
+        if nnormiecharacter in nnormiefont:
+            ccirclecharacter = ccirclefont[nnormiefont.index(nnormiecharacter)]
+            string = string.replace(nnormiecharacter, ccirclecharacter)
+    await event.edit(string
+
+
+@cipherx.on(events.NewMessage(pattern="3text ?(.*)"))
+async def weebify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await event.edit("`یه متن بده بهم`")
+        return
+    string = "  ".join(args).lower()
+    for normiecharacter in string:
+        if normiecharacter in normiefont:
+            circlecharacter = circlefont[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, circlecharacter)
+    await event.edit(string)
+
+
+@cipherx.on(events.NewMessage(pattern="4text ?(.*)"))
+async def weebify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await event.edit("`یه متن بده بهم`")
+        return
+    string = "  ".join(args).lower()
+    for onormiecharacter in string:
+        if onormiecharacter in onormiefont:
+            ocirclecharacter = ocirclefont[onormiefont.index(onormiecharacter)]
+            string = string.replace(onormiecharacter, ocirclecharacter)
+    await event.edit(string)
+
+@cipherx.on(events.NewMessage(pattern="5text ?(.*)"))
+async def weebify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await event.edit("`یه متن بده بهم`")
+        return
+    string = "  ".join(args).lower()
+    for anormiecharacter in string:
+        if anormiecharacter in anormiefont:
+            acirclecharacter = acirclefont[anormiefont.index(anormiecharacter)]
+            string = string.replace(anormiecharacter, acirclecharacter)
+    await event.edit(string)
 
 get_event_loop().run_forever()        
 cipherx.run_until_disconeccted() 
