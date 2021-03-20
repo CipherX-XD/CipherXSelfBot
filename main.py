@@ -578,5 +578,5 @@ async def weebify(event):
 			string = string.replace(anormiecharacter, acirclecharacter)
 	await event.edit(string)
 
-get_event_loop().run_forever()        
+asyncio.get_event_loop().run_forever()        
 cipherx.run_until_disconeccted() 
