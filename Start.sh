@@ -25,7 +25,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
 echo '
         •• Cloning Repository
 '
-git clone https://github.com/CipherX-XD/CipherXSelfBot.git /root/CipherX-XD/
+git clone https://github.com/CipherX-XD/CipherXSelfBot.git
 
  
 echo '
@@ -33,7 +33,7 @@ echo '
 ' 
 pip install --upgrade pip wheel 
 
-pip install -r /root/CipherX-XD/requirements.txt
+pip install -r requirements.txt
  
 echo "
              _______       __             _  __
